@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## develop (xxxx-xx-xx)
+
+- fix(task): fix  `Task.prepare_data` to support saving preprocessors that produce `int` values in metadata [@lylyhan](http://github.com/lylyhan)
+
+## Version 4.0.4 (2026-02-07)
+
+- feat(sample): add transcription of sample file
+- setup: relax torch dependencies constraints
+- fix(pipeline): fix HF authentication for Speechbrain speaker embedding [@krisoye](https://github.com/krisoye)
+
 ## Version 4.0.3 (2025-12-07)
 
 - feat(cli): add `--revision` option to most CLI commands
@@ -370,7 +380,7 @@ Providing `num_speakers` to [`pyannote/speaker-diarization-3.1`](https://hf.co/p
 ## Version 1.0 (2018-07-03)
 
 - chore: switch from keras to pytorch (with tensorboard support)
-- improve: faster & better traning (`AutoLR`, advanced learning rate schedulers, improved batch generators)
+- improve: faster & better training (`AutoLR`, advanced learning rate schedulers, improved batch generators)
 - feat: add tunable speaker diarization pipeline (with its own tutorial)
 - chore: drop support for Python 2 (use Python 3.6 or later)
 
